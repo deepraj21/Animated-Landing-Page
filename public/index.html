@@ -4,6 +4,8 @@
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/sheryjs/dist/Shery.css">
+    <!-- <link rel="stylesheet" type="text/css" href="https://unpkg.com/sheryjs/dist/Shery.css" /> -->
     <meta name="theme-color" content="#000000" />
     <meta
       name="description"
@@ -15,7 +17,6 @@
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <link rel="stylesheet" type="text/css" href="https://unpkg.com/sheryjs/dist/Shery.css">
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -24,326 +25,12 @@
       Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
-
     -->
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&family=Poppins:wght@200&family=Spline+Sans+Mono:ital,wght@1,700&display=swap');
-
-::-webkit-scrollbar {
-  display: none;
-}
-
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-}
-
-html,
-body {
-  width: 100%;
-  height: 100%;
-}
-
-#main {
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-
-
-}
-
-#back {
-  width: 100%;
-  height: 100vh;
-  /* background-color: black; */
-}
-
-#back img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-#top {
-  pointer-events: none;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-
-}
-
-#workingarea {
-  margin: 0 auto;
-  width: 80%;
-  height: 100vh;
-  /* border: 2px solid red; */
-  max-width: 1600px;
-  position: relative;
-}
-
-#nav {
-  width: 100%;
-  padding: 40px 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-#nav img {
-  height: 60px;
-}
-
-#nleft,
-#nright {
-  align-items: center;
-  display: flex;
-  gap: 40px;
-}
-
-#nav a {
-  pointer-events: all;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-weight: 600;
-  font-size: 12px;
-  letter-spacing: 1px;
-  color: #fff;
-
-}
-
-#hero {
-  width: 100%;
-  display: flex;
-  position: absolute;
-  justify-content: space-between;
-  transform: translate(0%, -50%);
-  /* height: 30px; */
-  top: 50%;
-  left: 0;
-}
-
-#heroleft {
-  min-width: 50%;
-
-}
-
-#heroleft button {
-  pointer-events: all;
-  padding: .8vw 3vw;
-  font-size: 3vw;
-  font-family: "Kajiro";
-  margin-top: 2vw;
-
-}
-
-#heroleft .elem {
-  position: relative;
-  height: 9vw;
-  /* background-color: aqua; */
-  overflow: hidden;
-
-}
-
-#heroleft .elem h1:nth-child(1) {
-  top: 0;
-}
-
-#heroleft .elem h1 {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  line-height: .9;
-  font-family: "kajiro";
-  color: #fff;
-  font-weight: 100;
-  font-size: 11vw;
-}
-
-#heroright {
-  width: 17%;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-}
-
-#heroright p {
-  /* margin-bottom: 50px; */
-  font-size: 14px;
-  font-weight: 300;
-  text-align: right;
-}
-
-#heroright #imagediv {
-  width: 100%;
-  margin-top: 20px;
-  margin-bottom: 30px;
-  height: 170px;
-  background-image: url(https://images.unsplash.com/photo-1682685797168-613fd0cae41d?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
-  background-size: cover;
-  background-position: center;
-  border-radius: 20px;
-}
-
-#heroright p:nth-child(3) {
-  margin-bottom: 100px;
-}
-    </style>
     <title>React App</title>
   </head>
   <body>
-    
-    <div id="main">
-      <div id="back">
-        <img src="./images/image1.jpg" alt="">
-        <img src="./images/image2.jpg" alt="">
-        <img src="./images/image3.jpg" alt="">
-        <img src="./images/image4.jpg" alt="">
-        <img src="./images/image5.jpg" alt="">
-      </div>
-      <div id="top">
-        <div id="workingarea">
-          <div id="nav">
-            <div id="nleft">
-              <img src="./images/raybanlogo.png" alt="logo">
-              <a href="">Home</a><a href="">Blogs</a>
-    
-            </div>
-            <div id="nright">
-              <a href="">About</a><a href="">Contact</a>
-            </div>
-          </div>
-          <div id="hero">
-            <div id="heroleft">
-              <div class="elem">
-                <h1>Nature's beauty</h1>
-                <h1>Wilderness whispers</h1>
-                <h1>Earth's palette,</h1>
-                <h1>Sky's canvas,</h1>
-                <h1>Nature's cure,</h1>
-              </div>
-              <div class="elem">
-                <h1>is Earth's</h1>
-                <h1>humanity</h1>
-                <h1>vibrant and</h1>
-                <h1>painted with</h1>
-                <h1>a breath</h1>
-              </div>
-              <div class="elem">
-                <h1>poetry.</h1>
-                <h1>listens.</h1>
-                <h1>alive</h1>
-                <h1>clouds</h1>
-                <h1>away</h1>
-              </div>
-              <button>Explore Now</button>
-            </div>
-            <div id="heroright">
-              <p>Nature's rhythm, life's symphony.</p>
-              <div id="imagediv">
-    
-              </div>
-              <p>Nature, in all its grandeur and subtlety, stands as an unrivaled masterpiece, an intricate tapestry woven
-                with threads
-                of beauty and complexity. From the majestic peaks of towering mountains to the delicate petals of a blooming
-                flower,
-                nature is a testament to the boundless creativity of the universe.</p>
-              <p>The landscapes that unfold under nature's brush are diverse and awe-inspiring. Lush forests, dense and
-                verdant, harbor a
-                plethora of life, from the towering trees that pierce the sky to the myriad creatures that call the
-                undergrowth home.
-    
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
-    
-    <script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script>
-    
-    <script type="text/javascript" src="https://unpkg.com/sheryjs/dist/Shery.js"></script>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-
-    <script>
-      
-        Shery.imageEffect("#back", {
-          style: 5,
-          config: {
-            "a": { "value": 1.49, "range": [0, 30] },
-            "b": {
-              "value": -0.98,
-              "range": [-1, 1]
-            },
-            "aspect": { "value": 1.8822947576656774 },
-            "gooey": { "value": true },
-            "infiniteGooey": { "value": true },
-            "durationOut": { "value": 1, "range": [0.1, 5] },
-            "durationIn": { "value": 1, "range": [0.1, 5] },
-            "displaceAmount": { "value": 0.5 },
-            "masker": { "value": true },
-            "maskVal": {
-              "value": 1.33,
-              "range": [1, 5]
-            },
-            "scrollType": { "value": 0 },
-            "geoVertex": { "range": [1, 64], "value": 1 },
-            "noEffectGooey": { "value": false },
-            "onMouse": { "value": 1 },
-            "noise_speed": { "value": 1.59, "range": [0, 10] },
-            "metaball": { "value": 0.21, "range": [0, 2] },
-            "discard_threshold": { "value": 0.5, "range": [0, 1] }, "antialias_threshold": { "value": 0, "range": [0, 0.1] },
-            "noise_height": { "value": 0.47, "range": [0, 2] },
-            "noise_scale": { "value": 12.15, "range": [0, 100] }
-          },
-          gooey: true
-        });
-
-        let elems = document.querySelectorAll('.elem')
-
-        elems.forEach(function (elem) {
-          let h1s = elem.querySelectorAll('h1');
-          let index = 0;
-          let animating = false;
-
-
-          document.querySelector("#main").addEventListener("click", function () {
-            if (!animating) {
-              animating = true;
-
-              gsap.to(h1s[index], {
-                top: '-=100%',
-                ease: Expo.easeInOut,
-                duration: 1,
-                onComplete: function () {
-                  gsap.set(this._targets[0], { top: '100%' })
-                  animating = false;
-                },
-              });
-              (index === h1s.length - 1) ? (index = 0) : index++
-              gsap.to(h1s[index], {
-                top: '-=100%',
-                ease: Expo.easeInOut,
-                duration: 1
-              });
-
-            }
-          })
-
-        })
-
-      
-
-    </script>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
@@ -354,5 +41,14 @@ body {
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script>
+    
+    <script type="text/javascript" src="https://unpkg.com/sheryjs/dist/Shery.js"></script>
   </body>
 </html>
